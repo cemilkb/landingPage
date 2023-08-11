@@ -1,0 +1,198 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    text-decoration: none;
+}
+
+body {
+    background-image: url(images/pexels-chevanon-photography-325044.jpg);
+    background-size: cover;
+}
+
+h1 {
+    font-family: 'Arvo', serif;
+    font-weight: lighter;
+}
+
+nav {
+    background-color: rgba(255, 255, 255, 0.060);
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.iconName {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    flex: 1;
+}
+
+
+.click {
+    margin-left: auto;
+    margin-right: 12px;
+    display: flex;
+    gap: 25px;
+    width: fit-content;
+    flex: 1;
+    align-items: center;
+}
+
+a{
+    border-bottom: rgba(255, 255, 255, 0) solid 1px;
+    transition: border 0.5s ease-out;
+    
+}
+
+a:hover {
+  border-bottom: white 1px solid;
+    text-shadow: 0px 0px 10px rgb(255, 255, 255);
+}
+
+.content {
+    margin: 50px 0px;
+    display: flex;
+}
+
+.content img {
+    border-radius: 20px;
+}
+
+.summary {
+    text-align: center;
+    flex: 1;
+}
+
+.summary button {
+    background-color: rgba(0, 0, 0, 0.651);
+    border: none;
+    font-family: 'Arvo', serif;
+    padding: 6px;
+    border-radius: 5px;
+    margin-top: 12px;
+    color: rgb(209, 0, 0);
+    font-weight: bold;
+    font-size: 18px;
+    transition: box-shadow 0.5s ease, text-shadow 0.5s ease-in-out;
+}
+
+.summary button:hover {
+    text-shadow: 0px 0px 10px rgb(161, 4, 4);
+    box-shadow: 0px 0px 10px  rgb(209, 0, 0);
+}
+
+.other {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 64px;
+}
+
+.box {
+    margin: 20px 1%;
+    width: 20%;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.352);
+    border-radius: 10px;
+    transition: box-shadow 0.5s ease;
+}
+
+.box:hover{
+    box-shadow: 0px 0px 15px 5px rgba(255, 255, 255, 0.352);
+}
+
+.box img {
+    border-radius: 5px;
+    width: 100%;
+}
+
+.box h1,
+p {
+    text-align: left;
+}
+
+.box h1 {
+    color: black;
+    font-weight: bold;
+}
+
+.box p {
+    color: white;
+    font-size: 16px;
+}
+
+.deneme {
+    display: flex;
+    flex-direction: column;
+}
+
+.bg {
+    background-color: rgb(209, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 62px 0px;
+    margin: 64px 0px;
+
+}
+
+.name {
+    text-align: end;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.proverb,
+.name {
+    width: 50%;
+    text-shadow: 0px 0px 10px rgb(255, 255, 255);
+}
+
+.sgin {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(209, 0, 0);
+    border-radius: 5px;
+    padding: 34px 0px;
+    width: 50%;
+    margin: 0px auto 64px auto;
+}
+
+.sgin h1,
+p {
+    font-weight: lighter;
+}
+
+.sgin h1 {
+    font-size: 22px;
+}
+
+.sgin p {
+    font-size: 12px;
+}
+
+.sgin button {
+    background-color: rgba(255, 255, 255, 0);
+    border: white 1px solid;
+    border-radius: 5px;
+    height: fit-content;
+    padding: 2px 26px;
+    transition: box-shadow 0.5s ease, text-shadow 0.5s ease-in-out;
+}
+
+.sgin button:hover {
+    text-shadow: 0px 0px 10px rgb(255, 255, 255);
+    box-shadow: 0px 0px 10px  rgb(255, 255, 255);
+}
+
+.footer {
+    text-align: center;
+    background-color: rgb(209, 0, 0, 0.2);
+    border-top: 1px solid rgb(255, 255, 255, 0.4);
+}

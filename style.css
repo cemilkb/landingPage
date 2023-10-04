@@ -41,13 +41,13 @@ nav {
     align-items: center;
 }
 
-a{
+.click>a{
     border-bottom: rgba(255, 255, 255, 0) solid 1px;
     transition: border 0.5s ease-out;
     
 }
 
-a:hover {
+.click>a:hover {
   border-bottom: white 1px solid;
     text-shadow: 0px 0px 10px rgb(255, 255, 255);
 }
@@ -76,12 +76,17 @@ a:hover {
     color: rgb(209, 0, 0);
     font-weight: bold;
     font-size: 18px;
-    transition: box-shadow 0.5s ease, text-shadow 0.5s ease-in-out;
+    transition: all 0.5s ease;
 }
 
 .summary button:hover {
     text-shadow: 0px 0px 10px rgb(161, 4, 4);
     box-shadow: 0px 0px 10px  rgb(209, 0, 0);
+    scale: 1.05;
+}
+
+.summary button:active{
+    scale: 1;
 }
 
 .other {
@@ -99,11 +104,12 @@ a:hover {
     padding: 10px;
     background-color: rgba(255, 255, 255, 0.352);
     border-radius: 10px;
-    transition: box-shadow 0.5s ease;
+    transition: all 0.5s ease;
 }
 
 .box:hover{
     box-shadow: 0px 0px 15px 5px rgba(255, 255, 255, 0.352);
+    transform: translateY(-10px);
 }
 
 .box img {
@@ -145,10 +151,16 @@ p {
     text-align: end;
     font-weight: bold;
     font-size: 20px;
+    animation: bu infinite 4s;
 }
 
-.proverb,
-.name {
+@keyframes bu {
+    50%{ 
+    text-shadow: 0px 0px 5px red, 0px 0px 10px red, 0px 0px 20px red, 0px 0px 50px red;
+    }
+}
+
+.proverb, .name {
     width: 50%;
     text-shadow: 0px 0px 10px rgb(255, 255, 255);
 }
@@ -183,7 +195,7 @@ p {
     border-radius: 5px;
     height: fit-content;
     padding: 2px 26px;
-    transition: box-shadow 0.5s ease, text-shadow 0.5s ease-in-out;
+    transition: all 0.5s ease;
 }
 
 .sgin button:hover {
@@ -191,8 +203,16 @@ p {
     box-shadow: 0px 0px 10px  rgb(255, 255, 255);
 }
 
+.sgin button:active{
+    scale: .8;
+}
+
 .footer {
     text-align: center;
     background-color: rgb(209, 0, 0, 0.2);
     border-top: 1px solid rgb(255, 255, 255, 0.4);
+}
+
+.footer>a{
+    text-decoration: none;
 }
